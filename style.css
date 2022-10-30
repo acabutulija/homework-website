@@ -1,0 +1,280 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px 0 10px;
+}
+
+nav span {
+    color: #ffffff;
+}
+
+nav {
+    margin-right: 60px;
+}
+
+content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #EEEEEE;
+}
+
+article {
+    background-color: #FFFFFF;
+    height: auto;   
+    width: 91%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
+article h1 {
+    font-size: 45px;
+    margin: 20px 0 0 20px;
+    color: #333333;
+}
+
+article h2 {
+    font-weight: 400;
+    margin: 5px 0 20px 20px;
+    padding-bottom: 30px;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+}
+
+.first-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 70px);
+    padding: 0 40px 0 30px;
+    margin: 0 0 20px 0;
+}
+
+.first-div-helper {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.text-div p {
+    width: auto;
+    max-width: 500px;
+    font-size: 13pt;
+    text-align: justify;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.text-div h3 {
+    margin: 5px 0 11px 0;
+}
+
+.first-div img {
+    display: block;
+    max-width: 480px;
+    max-height: 450px;
+    width: 100%;
+    height: auto;
+}
+
+.second-div {
+    margin: 0 20px 0 20px;
+    padding: 10px;
+    width: calc(100% - 60px);
+    border: 1px dashed black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.lst {
+    margin-bottom: 5px;
+}
+
+.fst {
+    margin-bottom: 15px;
+}
+
+.third-div {
+    margin: 30px 0 20px 0;
+    width: calc(100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.merged-tdivs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+
+.small {
+    margin-bottom: 15px;
+}
+
+.small p {
+    max-width: 250px;
+}
+
+.contrast {
+    background-color: black;
+    padding: 5px;
+}
+
+.contrast h3, .contrast p {
+    color: white;
+}
+
+footer {
+    background-color: #333333;
+    height: auto;
+    width: calc(100% - 50px);
+    padding: 25px;
+}
+
+#footer-text {
+    color: #FFFFFF;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#dgu {
+    font-size: 40px;
+    color: #636369;
+}
+
+#pos {
+    color: #636369;
+}
+
+#rig {
+    text-align: right;
+}
+
+@media screen and (min-width: 880px) {
+    article {
+        width: 81%;
+    }
+
+    #footer-text {
+        font-size: 30px;
+    }
+
+    #dgu {
+        font-size: 80px;
+    }
+
+    .merged-tdivs {
+        flex-direction: row;
+        width: auto;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+
+    .small {
+        margin-right: 20px;
+    }
+
+    footer {
+        width: calc(81% - 50px);
+    }
+}
+
+@media screen and (min-width: 1250px) {
+    article {
+        width: 71%;
+    }
+
+    footer {
+        width: calc(71% - 50px);
+    }
+    
+    .first-div {
+        align-items: flex-start;
+    }
+    
+    .first-div-helper {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .first-div-helper .text-div {
+        margin-right: 25px;
+    }
+
+    .second-div {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .second-div .text-div {
+        margin-right: 25px;
+    }
+
+    .lst {
+        margin-bottom: 10px;
+    }
+    
+    .fst {
+        margin-bottom: 10px;
+    }
+
+    .third-div {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .merged-tdivs {
+        flex-direction: row;
+        width: calc(50% - 60px);
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+
+    .small {
+        margin-right: 20px;
+    }
+}
